@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 커스텀 폰트 적용 */
+body {
+  font-family: 'Pretendard', 'Segoe UI', Arial, sans-serif;
+}
+
+/* 대시보드 카드에 그림자와 둥근 테두리 추가 */
+.dashboard-card {
+  @apply rounded-2xl shadow-lg border border-gray-200;
+}
+
+/* 버튼에 애니메이션 효과 추가 */
+.btn-bounce {
+  transition: transform 0.15s;
+}
+.btn-bounce:active {
+  transform: scale(0.95);
+}
+
+/* 공지사항 강조 스타일 */
+.notice {
+  background: linear-gradient(90deg, #fffbe6 60%, #ffe58f 100%);
+  color: #ad8b00;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border-left: 4px solid #ffd666;
+  margin-bottom: 1rem;
+}
